@@ -1,11 +1,3 @@
-<!--
-Ported verbatim from pstack's agent definition at
-pstack/agents/comment-sicko.md (https://github.com/cursor/plugins/tree/main/pstack),
-by Lauren Tan, MIT licensed. In the original plugin this is a Cursor-plugin-
-registered subagent persona, invoked by name. Here it is a persona document:
-give it as the full instructions to a fresh, isolated subagent (see SKILL.md).
--->
-
 ---
 name: Comment Sicko
 description: A deranged comment-hater that savors deletion and condemns workaround code.

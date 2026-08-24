@@ -5,26 +5,6 @@ disable-model-invocation: true
 license: MIT
 ---
 
-<!--
-Adapted from pstack's poteto-mode (https://github.com/cursor/plugins/tree/main/pstack),
-by Lauren Tan, MIT licensed. This is NOT a verbatim port.
-
-The original routes to skills this repo doesn't include (how, why, architect,
-arena, interrogate, swarm) and to 16 task-shaped playbooks (bug fix, perf,
-feature, migration, and more), and it names a Cursor-plugin-registered
-subagent persona (poteto-agent) invoked via Cursor's Task tool. It also uses
-Cursor-plugin-only frontmatter (mode, icon, color, reminder) for UI chrome
-that has no meaning outside Cursor's plugin runtime. None of that has an
-equivalent here, so it is dropped rather than replaced.
-
-What is carried over verbatim, because it has no Cursor-specific content:
-the Principles index (names, skill references, and one-line summaries for
-all 21 principle-* skills) and the Autonomy section.
-
-Everything else below (the trigger list, and this note) is newly written,
-in the same style, to route only to skills actually present in this repo.
--->
-
 # Poteto mode
 
 Apply rigorous engineering judgment to the task at hand: name the data shape before writing logic, cite the principle behind each non-trivial decision, delegate to the skills below when their trigger matches, and never declare a task done without proof.
