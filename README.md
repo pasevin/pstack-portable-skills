@@ -87,6 +87,31 @@ surrounding content is untouched; only the named mechanism was replaced.
 
 ## Using these skills
 
+### Install with the skills CLI
+
+This repo's layout (`skills/<name>/SKILL.md`) matches what the open-source
+[`skills` CLI](https://github.com/vercel-labs/skills) expects, so any skill
+here installs with one command, no cloning required:
+
+```bash
+# List every skill in this repo
+npx skills add pasevin/pstack-portable-skills --list
+
+# Install one skill into the current project
+npx skills add pasevin/pstack-portable-skills --skill unslop
+
+# Install a skill for every project on your machine
+npx skills add pasevin/pstack-portable-skills --skill unslop -g
+
+# Install everything in this repo
+npx skills add pasevin/pstack-portable-skills --all
+```
+
+The CLI supports 75+ agents (Claude Code, Cursor, Codex, and more) via the
+`--agent` flag; see its README for the full list.
+
+### Install by hand
+
 Copy any `skills/<name>` directory into wherever your agent or tool reads
 skills from (for example a `skills/` directory read by your coding agent,
 whether that's a user-level directory or a project-level one). Each skill is
