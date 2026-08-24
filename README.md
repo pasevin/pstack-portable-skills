@@ -21,8 +21,7 @@ The following were left out because they depend on Cursor-specific
 infrastructure that has no equivalent outside Cursor, or because they are
 meta/orchestration skills rather than code- or writing-quality skills:
 
-- `poteto-mode`, `setup-pstack`: depend on Cursor's Rules feature
-  (`~/.cursor/rules/*.mdc`) and Cursor's plugin/mode UI chrome.
+- `setup-pstack`: depends on Cursor's Rules feature (`~/.cursor/rules/*.mdc`).
 - `recall`, `automate-me`, `reflect`: depend on Cursor's chat transcript
   storage path (`~/.cursor/projects/*/agent-transcripts/`) and Cursor's
   built-in `create-skill` skill.
@@ -84,6 +83,22 @@ surrounding content is untouched; only the named mechanism was replaced.
   (`~/.cursor/projects/*/agent-transcripts/`). That line now reads the
   session's own transcript generically, if the environment exposes one,
   with the same "never read unrelated sessions" constraint.
+
+## What was recreated, not ported
+
+- `poteto-mode`: the original is pstack's routing hub, but it dispatches to
+  skills this repo doesn't include (`how`, `why`, `architect`, `arena`,
+  `interrogate`, `swarm`), to 16 Cursor-plugin playbook files, and to a
+  Cursor-registered `poteto-agent` subagent persona, and it uses
+  Cursor-plugin-only frontmatter (`mode`, `icon`, `color`, `reminder`) for UI
+  chrome. None of that has an equivalent outside Cursor, so rather than a
+  port, `skills/poteto-mode/SKILL.md` is a rewrite: the Principles index and
+  Autonomy section are carried over verbatim (they have no Cursor-specific
+  content), the trigger list is newly written to route only to skills
+  actually in this repo (`unslop`, `tdd`, `blast-radius`, `teach`,
+  `no-comments`, `show-me-your-work`, and `principle-model-the-domain`), and
+  the playbooks and subagent persona are dropped rather than replaced. Full
+  rationale is in an HTML comment at the top of that file.
 
 ## Using these skills
 
