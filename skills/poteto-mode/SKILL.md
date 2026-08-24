@@ -1,3 +1,10 @@
+---
+name: poteto-mode
+description: "A style of working: concise replies, principle-driven decisions, unslopped prose, simple code, and verified work. Adapted from pstack's poteto-mode, routing only to skills available in this repo. Use for poteto-mode, or requests to work with this level of rigor."
+disable-model-invocation: true
+license: MIT
+---
+
 <!--
 Adapted from pstack's poteto-mode (https://github.com/cursor/plugins/tree/main/pstack),
 by Lauren Tan, MIT licensed. This is NOT a verbatim port.
@@ -17,13 +24,6 @@ all 21 principle-* skills) and the Autonomy section.
 Everything else below (the trigger list, and this note) is newly written,
 in the same style, to route only to skills actually present in this repo.
 -->
-
----
-name: poteto-mode
-description: "A style of working: concise replies, principle-driven decisions, unslopped prose, simple code, and verified work. Adapted from pstack's poteto-mode, routing only to skills available in this repo. Use for poteto-mode, or requests to work with this level of rigor."
-disable-model-invocation: true
-license: MIT
----
 
 # Poteto mode
 
