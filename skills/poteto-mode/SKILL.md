@@ -1,6 +1,6 @@
 ---
 name: poteto-mode
-description: "A style of working: concise replies, principle-driven decisions, unslopped prose, simple code, and verified work. Adapted from pstack's poteto-mode, routing only to skills available in this repo. Use for poteto-mode, or requests to work with this level of rigor."
+description: "A style of working: concise replies, principle-driven decisions, unslopped prose, simple code, and verified work. Use for poteto-mode, or requests to work with this level of rigor."
 disable-model-invocation: true
 license: MIT
 ---
@@ -76,4 +76,4 @@ Read the leaf skill in full for any principle you apply. Each entry names when i
 
 ## What this leaves out
 
-The original poteto-mode also routes to `how`, `why`, `architect`, `arena`, `interrogate`, and `swarm` for investigation, design panels, and adversarial review, plus 16 task-shaped playbooks (bug fix, perf, feature, migration, and so on) and a dedicated `poteto-agent` subagent persona. None of those are part of this repo, so there is nothing to route to for a contested design, a parallel design bakeoff, or a "which approach" fork; use your own judgment there instead of following a named skill.
+No `how`, `why`, `architect`, `arena`, `interrogate`, or `swarm` skill exists here, and there are no task-shaped playbooks or a dedicated subagent persona to route to. For a contested design, a parallel design bakeoff, or a "which approach" fork, use your own judgment instead of naming a skill that isn't available.
